@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid black;/* Add underline to h1 */
+    width: 50%; /* Adjust the width to reduce the length */
+    margin: 0 auto; /* Center the h1 horizontally */
+    padding-bottom: 10px;
+    /* Space between text and underline */
+}
+
+nav {
+    text-align: center;
+    /* Center-align the nav */
+}
+
+ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+li {
+    display: inline;
+    /* Display list items inline */
+    margin: 0 10px;
+    /* Add space around list items */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 8rem;
+    flex: 1; /* Occupy remaining space */
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center items vertically */
+    flex: 1; /* Occupy remaining space */
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #FFD700; /* Golden color */
+    border: none;
+    cursor: pointer;
+}

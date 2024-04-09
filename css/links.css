@@ -1,0 +1,78 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    /* Add underline to h1 */
+    width: 50%; /* Adjust the width to reduce the length */
+    margin: 0 auto; /* Center the h1 horizontally */
+    padding-bottom: 10px;
+    /* Space between text and underline */
+}
+
+nav {
+    text-align: center;
+    /* Center-align the nav */
+}
+
+ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+li {
+    display: inline;
+    /* Display list items inline */
+    margin: 0 10px;
+    /* Add space around list items */
+}
+
+.circle-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.circle-img {
+    width: 350px;
+    /* Increased size of the circle */
+    height: 350px;
+    /* Increased size of the circle */
+    border-radius: 50%;
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    /* Align links from top to bottom */
+    align-items: center;
+    margin-top: 30px;
+}
+
+.link {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #007BFF;
+    /* Set text color to blue */
+    text-decoration: none;
+    border: 2px solid black;
+    /* Added border */
+    border-radius: 5px;
+    transition: color 0.3s ease; /* Added transition for text color */
+}
+
+.link:hover {
+    color: #0056b3; /* Change text color on hover */
+}
