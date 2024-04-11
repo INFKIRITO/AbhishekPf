@@ -1,39 +1,35 @@
+/* Existing CSS Code */
+
 body {
     font-family: Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
-    border-bottom: 2px solid black;/* Add underline to h1 */
-    width: 50%; /* Adjust the width to reduce the length */
-    margin: 0 auto; /* Center the h1 horizontally */
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin: 0 auto;
     padding-bottom: 10px;
-    /* Space between text and underline */
 }
 
 nav {
     text-align: center;
-    /* Center-align the nav */
 }
 
 ul {
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0;
-    /* Remove default padding */
 }
 
 li {
     display: inline;
-    /* Display list items inline */
     margin: 0 10px;
-    /* Add space around list items */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 .contact-form {
@@ -42,14 +38,14 @@ li {
     padding: 20px;
     border-radius: 5px;
     margin-left: 8rem;
-    flex: 1; /* Occupy remaining space */
+    flex: 1;
 }
 
 .image-container {
     display: flex;
-    justify-content: flex-end; /* Align image to the right */
-    align-items: center; /* Center items vertically */
-    flex: 1; /* Occupy remaining space */
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
 }
 
 .image-container img {
@@ -81,7 +77,52 @@ li {
     width: 100%;
     padding: 10px;
     background-color: transparent;
-    color: #FFD700; /* Golden color */
+    color: #FFD700;
     border: none;
     cursor: pointer;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    h1 {
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        margin: 30px auto;
+        margin-left: 0;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+
+    .image-container img {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        width: 90%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .image-container img {
+        max-width: 50%;
+    }
+
+    /* Hide image on phones */
+    .contact-form + .image-container {
+        display: none;
+    }
 }

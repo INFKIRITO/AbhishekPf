@@ -4,76 +4,127 @@ body {
 
 h1 {
     text-align: center;
-    border-bottom: 2px solid black; /* Add underline to h1 */
-    width: 50%; /* Adjust the width to reduce the length */
-    margin: 0 auto; /* Center the h1 horizontally */
-    padding-bottom: 08px;
-    /* Space between text and underline */
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 8px;
 }
 
 nav {
     text-align: center;
     padding: 0.25%;
-    /* Center-align the nav */
 }
 
 ul {
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0.25%;
-    /* Remove default padding */
 }
 
 li {
     display: inline;
-    /* Display list items inline */
     margin: 0 10px;
-    /* Add space around list items */
 }
 
 .font_2 {
     font-size: 40px;
     font-family: 'varela round', sans-serif;
-    position: absolute; /* Set absolute positioning */
-    top: 25%; /* Adjust position between top and middle */
-    left: 5%; /* Adjust position from the left */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    z-index: 1; /* Ensure text is above the image */
-    color: white; /* Set text color to white */
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
 }
 
 .main-heading {
     font-size: 37px;
     font-weight: bold;
-    color: white; /* Set text color to white */
+    color: white;
     margin-left: 8rem;
 }
 
-.main-name span { /* Targeting both "Abhishek" and "Kumar" within .main-name */
+.main-name span {
     font-size: 37px;
     font-weight: bold;
-    color: white; /* Set text color to white */
+    color: white;
 }
 
 .sub-heading {
     font-size: 23px;
     font-weight: bold;
-    color: white; /* Set text color to white */
+    color: white;
 }
 
 .image-container {
-    position: relative; /* Set relative positioning */
-    width: 100%; /* Set width of container */
-    overflow: hidden; /* Hide overflow */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .image-container img {
-    width: 100%; /* Set width of image to 100% */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Make image a block element */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .carousel-item img {
     height: 400px;
     object-fit: cover;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    h1 {
+        width: 80%;
+    }
+
+    .font_2 {
+        font-size: 30px;
+        left: 2%;
+    }
+
+    .main-heading {
+        font-size: 28px;
+        margin-left: 2rem;
+    }
+
+    .main-name span {
+        font-size: 28px;
+    }
+
+    .sub-heading {
+        font-size: 18px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        width: 90%;
+    }
+
+    .font_2 {
+        font-size: 25px;
+        left: 1%;
+    }
+
+    .main-heading {
+        font-size: 24px;
+        margin-left: 1rem;
+    }
+
+    .main-name span {
+        font-size: 24px;
+    }
+
+    .sub-heading {
+        font-size: 16px;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
 }
